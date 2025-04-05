@@ -2,32 +2,20 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>청소 당번 추첨기</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>기어 종류와 쓰임</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Bootstrap Icons CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <!-- SweetAlert2 CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-br from-green-100 via-white to-blue-100 min-h-screen flex flex-col items-center justify-center">
+<body class="bg-gray-100 min-h-screen p-6">
+  <div class="container mx-auto max-w-5xl">
+    <h1 class="text-4xl font-bold text-center text-gray-800 mb-10">⚙️ 기어의 종류와 쓰임</h1>
 
-  <div class="bg-white shadow-xl rounded-2xl p-10 w-full max-w-md text-center">
-    <h1 class="text-3xl font-bold text-gray-800 mb-6">
-      <i class="bi bi-stars text-green-500 mr-2"></i>
-      청소 당번 추첨기
-    </h1>
-    <button 
-      onclick="drawNumbers()" 
-      class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-xl text-lg transition duration-300"
-    >
-      <i class="bi bi-shuffle mr-1"></i> 당번 뽑기
-    </button>
-    <div id="result" class="mt-6 text-xl text-gray-700"></div>
+    <div id="gear-container" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- 기어 카드가 여기에 동적으로 삽입됨 -->
+    </div>
   </div>
 
   <script src="script.js"></script>
